@@ -23,7 +23,7 @@ while True:
     else:
          print("Invalid operation, try again")
 
-    request = input("Do you want to continue? (y/n): ")
-    if request != "y":
+    request = input("Do you want to continue? (yes/y - continue, any other command - exit): ")
+    if request.strip().lower() not in ('yes', 'y'):
         print("Exiting...")
-        exit()
+        break
